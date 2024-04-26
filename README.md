@@ -31,17 +31,14 @@ A step-by-step series of examples that tell you how to get a development environ
 If you've placed this project in a Git repository, start by cloning the project to your local machine:
 
 ```bash
-git clone https://yourrepositorylink.com
-cd quiz-application
+git clone https://github.com/saatv1k/AiQuizApp.git
+cd quiz-app-max_pense-saatvik_singaraju
 ```
+### Setting Up the API Key
+Open up the .env file and input your API Key
+
 
 #### Setting Up the Backend
-
-Navigate to the backend directory from the project root:
-
-```bash
-cd backend
-```
 
 Install the necessary packages:
 
@@ -51,9 +48,7 @@ npm install
 
 Start the server:
 
-```bash
-npm start
-```
+node index.js
 
 This will start the backend server on `http://localhost:3000`.
 
