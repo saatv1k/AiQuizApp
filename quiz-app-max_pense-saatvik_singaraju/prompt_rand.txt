@@ -1,0 +1,196 @@
+{
+    "QAs": [
+        {
+            "question": "Which is the oldest city in the world?",
+            "answers": [
+                "Damascus"
+            ],
+            "difficulty": 1,
+            "incorrect": ["New York City", "Paris", "Tokyo"]
+        },
+        {
+            "question": "What do you call when two water streams join?",
+            "answers": [
+                "Confluence"
+            ],
+            "difficulty": 1,
+            "incorrect": ["Water fusion", "H2O connection", "Liquid merger"]
+        },
+        {
+            "question": "What do you call a chain of mountains?",
+            "answers": [
+                "A mountain range"
+            ],
+            "difficulty": 1,
+            "incorrect": ["Moon range", "Hill series", "Ocean ridge"]
+        },
+        {
+            "question": "Which country is Taj Mahal in?",
+            "answers": [
+                "India"
+            ],
+            "difficulty": 2,
+            "incorrect": ["China", "Brazil", "Australia"]
+        },
+        {
+            "question": "What lies above mexico?",
+            "answers": [
+                "United Sates of America"
+            ],
+            "difficulty": 2,
+            "incorrect": ["Brazil", "Canada", "Japan"]
+        },
+        {
+            "question": "In which country would you find Mount Kilimanjaro?",
+            "answers": [
+                "Tanzania"
+            ],
+            "difficulty": 2,
+            "incorrect": ["India", "Australia", "Russia"]
+        },
+        {
+            "question": "Which country was once known as Rhodesia?",
+            "answers": [
+                "Zimbabwe"
+            ],
+            "difficulty": 3,
+            "incorrect": ["South Africa", "Nigeria", "Brazil"]
+        },
+        {
+            "question": "Which is the only country through which both the equator and the Tropic of Capricorn pass?",
+            "answers": [
+                "Brazil"
+            ],
+            "difficulty": 3,
+            "incorrect": ["United States", "Japan", "Russia"]
+        },
+        {
+            "question": "What is the currency used in Japan?",
+            "answers": [
+                "Yen"
+            ],
+            "difficulty": 3,
+            "incorrect": ["Dollar","Euro", "Pound"]
+        },
+        {
+            "question": "How many countries does China touch?",
+            "answers": [
+                "14"
+            ],
+            "difficulty": 4,
+            "incorrect": ["10", "7", "13"]
+        },
+        {
+            "question": "When did Bangladesh get independence?",
+            "answers": [
+                "1971"
+            ],
+            "difficulty": 4,
+            "incorrect": ["1970", "1980", "1965"]
+        },
+        {
+            "question": "How many time zones does Russia have?",
+            "answers": [
+                "11"
+            ],
+            "difficulty": 4,
+            "incorrect": ["1 time zone", "15 time zones", "8 time zones"]
+        },
+        {
+            "question": "This mountain range's volcano of Licancabur recorded the world's highest UV index in 2003, and this mountain range contains the world's highest permanent settlement at La Rinconada. This range passes by a lake known either as Lake O'Higgins or Lake San Martin near the province of Santa Cruz. For the point, name this South American mountain range home to Aconcagua.",
+            "answers": [
+                "Andes Mountains"
+            ],
+            "difficulty": 5,
+            "incorrect": ["Smoky Mountains","Rocky Mountains", "Himalayan Mountains"]
+        },
+        {
+            "question": "This resource is sought by companies such as Riot Whinstone who operate mines that are putting a strain on Texas's ERCOT power grid. In 2021, Nayib Bukele made this resource the official currency of El Salvador along with the U.S. Dollar, and Colonial Pipeline paid a ransom in this currency following a 2021 cyberattack. For the point, identify this cryptocurrency symbolized by a stylized B.",
+            "answers": [
+                "Bitcoin"
+            ],
+            "difficulty": 5,
+            "incorrect": ["Gold", "Silver", "Oil"]
+        },
+        {
+            "question": "This country's control of the Pitcairn Islands means at least one of its territories always experiences sunlight. This country maintains control over the Turks and Caicos Islands, and residents of the overseas Falklands territory voted overwhelmingly to remain part of this country. For the point, name this European country that controls Bermuda and a namesake collection of Virgin Islands.",
+            "answers": [
+                "United Kingdom"
+            ],
+            "difficulty": 5,
+            "incorrect": ["Spain", "Germany", "Italy"]
+        },
+        {
+            "question": "This U.S. state's town of International Falls is sometimes nicknamed the 'Icebox of the Nation.' This city's suburb of Bloomington contains the United States' largest indoor theme park at the Mall of America. This state administers the Northwest Angle, the northernmost point of the Lower 48 states. For the point, name this U.S. state home to the 'Twin Cities' of Saint Paul and Minneapolis.",
+            "answers": [
+                "Minnesota"
+            ],
+            "difficulty": 6,
+            "incorrect": ["New Hampshire", "Wyoming", "Texas"]
+        },
+        {
+            "question": "The Bassac River originates in this country where the lake of Tonl\u00e9 Sap contains a species of giant catfish named for the Mekong River. This country was formerly known as Kampuchea, and it is bordered to the northeast by Laos. For the point, name this Southeast Asian country that contains Angkor Wat and a capital at Phnom Penh.",
+            "answers": [
+                "Cambodia"
+            ],
+            "difficulty": 6,
+            "incorrect": ["Vietnam", "Thailand", "Malaysia"]
+        },
+        {
+            "question": "This city's Belem Tower is adjacent to a monument that honors explorers like Afonso the Fifth, Bartolomeu Dias, and Vasco da Gama. This city on the mouth of the Tagus River is the westernmost capital on the Iberian Peninsula. For the point, name this capital of Portugal.",
+            "answers": [
+                "Lisbon"
+            ],
+            "difficulty": 6,
+            "incorrect": ["Barcelona", "Seville", "Istanbul"]
+        }
+    ]
+}
+
+Given here is above is a JSON file with several quiz questions each with difficulties rate 1-6.  Lower difficulty means the problem is easier and higher difficulty means the problem is harder (1 being the lowest and 6 being the highest).  You are a quiz maker where your job is to create a quiz of 10 questions where the questions will be of specified difficulty. Based on the difficulty told to you, you should create a new question with the same style as a similar example question of the same difficulty.
+
+For example an example prompt and response would look like this if the quiz subject was geography:
+Prompt:
+{
+    "QAs": [
+        {
+            "question": "What is the capital of India?",
+            "answers": [
+                "New Delhi"
+            ],
+            "difficulty": 1,
+            "incorrect": ["New York City", "Mumbai", "Dhaka"]
+        },
+        {
+            "question": "This river begins in the Swiss Alps and passes through Germany and the Netherlands before emptying into the North Sea. It is one of the longest rivers in Europe and serves as a major waterway for commerce. For the point, name this river known for influencing European historical developments.",
+            "answers": [
+                "Rhine River"
+            ],
+            "difficulty": 6,
+            "incorrect": ["Danube River", "Elbe River", "Seine River"]
+        },
+    ]
+}
+Response:
+{
+    "QAs": [
+        {
+            "question": "In which country would you find the Leaning Tower of Pisa?",
+            "answers": [
+                "Italy"
+            ],
+            "difficulty": 1,
+            "incorrect": ["India", "Germany", "France"]
+        },
+        {
+            "question": "Vladivostok and Khabarovsk are major cities along this sea, which is bordered by Russia and North Korea and connects to the Pacific Ocean. It is known for being one of the most militarized borders in the world, especially around its narrow straits. For the point, name this sea that is central to Northeast Asian geopolitics.",
+            "answers": [
+                "Sea of Japan"
+            ],
+            "difficulty": 6,
+            "incorrect": ["Yellow Sea", "East China Sea", "Bering Sea"]
+        },
+    ]
+}
+
+Now that you have been given these examples: Given the example file create a JSON with 10 problems in the following difficulty order (1, 1, 2, 2, 3, 3, 4, 4, 5, 6). Do not write anything but what was instructed of you.

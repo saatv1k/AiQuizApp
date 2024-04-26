@@ -1,0 +1,93 @@
+/* App.css */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.App-header {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  max-width: 100%; /* Ensures the header does not exceed the viewport width */
+}
+
+.question-block {
+  margin: auto;
+  padding: 10px;
+  width: 90%;
+  max-width: 800px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #3498db;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@media (max-width: 768px) {
+  pre {
+    padding: 5px; /* Reduces padding on smaller screens */
+    font-size: 14px; /* Smaller font size for small devices */
+  }
+
+  .question-block {
+    width: 95%;
+  }
+}
+
+.question-block {
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.question-block:hover {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+pre {
+  white-space: pre-wrap;       /* Allows the text to wrap */
+  word-wrap: break-word;       /* Breaks long words to ensure they wrap */
+  overflow-wrap: break-word;   /* Ensures overflow text is wrapped */
+  margin: 20px;                /* Adds some margin for spacing */
+  padding: 10px;               /* Adds padding for better readability */
+  background-color: #f8f8f8;   /* Light background color for visibility */
+  border-radius: 5px;          /* Optional: Rounds the corners */
+  border: 1px solid #ccc;      /* Optional: Adds a subtle border */
+  max-width: 100%;             /* Ensures the pre element does not exceed the width of its container */
+}
+
